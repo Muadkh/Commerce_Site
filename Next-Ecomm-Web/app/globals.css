@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+      @apply  bg-white text-black from-neutral-focus mt-10 w-11/12;
+  }
+}
+@layer components {
+  .Line{
+    @apply ml-20
+  }
+
+  .Hero{
+    @apply text-3xl font-bold tracking-tighter opacity-80;
+    }
+.nav ul li{
+  @apply    ml-16 inline list-none text-base font-medium tracking-tighter text-center;
+}
+}
+
+
+
