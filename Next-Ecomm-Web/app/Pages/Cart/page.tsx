@@ -80,8 +80,8 @@ export const InternalCartShop = () => {
         <div className="">
           {order >= 1 ? (
             <div className="mt-8 ">
-              {cartItems.map((item: any ,key={Index}) => (
-                <div className="flex font-bold mt-8 text-center items-centre lg:gap-x-14 sm:gap-x-4 flex-shrink">
+              {cartItems.map((item: any) => (
+                <div key={item.index} className="flex font-bold mt-8 text-center items-centre lg:gap-x-14 sm:gap-x-4 flex-shrink">
                   <Image
                     src={urlFor(item.product[0].image[0]).url()}
                     alt={"Loading Page Image"}
