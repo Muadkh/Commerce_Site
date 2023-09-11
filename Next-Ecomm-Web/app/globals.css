@@ -5,7 +5,7 @@
 @layer base {
 
     body {
-      @apply  bg-white text-black from-neutral-focus mt-10 w-11/12;
+      @apply  bg-white text-black from-neutral-focus mt-10 overflow-x-hidden;
   }
 }
 @layer components {
@@ -13,12 +13,40 @@
     @apply ml-20
   }
 
+ 
+
   .Hero{
-    @apply text-3xl font-bold tracking-tighter opacity-80;
+    @apply sm:text-2xl lg:text-3xl font-bold tracking-tighter opacity-80 ;
     }
 .nav ul li{
-  @apply    ml-16 inline list-none text-base font-medium tracking-tighter text-center;
+  @apply    flex-shrink inline sm:p-2 lg:p-4  list-none lg:text-base sm:text-sm font-medium tracking-tighter text-center  justify-between;
 }
+
+.navbar__link:hover {
+  color: gray;
+  transition: all 0.4s;
+}
+
+.navbar__link::after {
+  position: absolute;
+  content: "";
+  background-color: blue;
+  height: 3px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  scale: 0;
+  transform-origin: left;
+  transition: all 0.4s;
+}
+
+.navbar__link:hover::after {
+  scale: 1;
+}
+
+
+
+
 }
 
 

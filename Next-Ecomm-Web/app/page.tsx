@@ -30,11 +30,7 @@ export default async function Home() {
     
 
    
-    {/* <div className='flex mt-10 ml-20 space-x-8'><HeroBanner/>
-     <NavBar/> 
-     <Cart/>
-     </div> */}
-     <div>
+     <div className=''>
   
 <LoadingPage data={data}  ></LoadingPage>
 <Promotions  ></Promotions>
@@ -44,11 +40,7 @@ export default async function Home() {
 
      </div>
      <div className="flex justify-center mt-60"><NewsLetter></NewsLetter></div>
-      {/* <div className='mt-40'>
-     < Footer></Footer> 
-     </div>
-     <hr className=" line border-1 w-full border-black "  /> 
-     <Footer1></Footer1> */}
+  
     </>
   )
 }

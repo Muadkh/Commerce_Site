@@ -17,6 +17,7 @@ import { useGlobalState } from "@/app/Context/StateContextStore";
 import getStripe from "@/sanity/lib/GetStripe";
 import { loadStaticPaths } from "next/dist/server/dev/static-paths-worker";
 import { toast } from "react-toastify";
+import { Index } from "drizzle-orm/pg-core";
 
 const CartShop = () => {
   const {
@@ -75,12 +76,12 @@ export const InternalCartShop = () => {
 
   return (
     <>
-      <div className="flex ml-60 mt-20">
+      <div className="flex lg:ml-60 lg:mt-20 sm:ml-24 sm:mt-10 flex-shrink">
         <div className="">
           {order >= 1 ? (
             <div className="mt-8 ">
-              {cartItems.map((item: any) => (
-                <div className="flex font-bold mt-8 text-center items-centre gap-x-14">
+              {cartItems.map((item: any ,key={Index}) => (
+                <div className="flex font-bold mt-8 text-center items-centre lg:gap-x-14 sm:gap-x-4 flex-shrink">
                   <Image
                     src={urlFor(item.product[0].image[0]).url()}
                     alt={"Loading Page Image"}
@@ -91,7 +92,7 @@ export const InternalCartShop = () => {
                     {" "}
                     {
                       <>
-                        <div className="flex gap-x-8">
+                        <div className="flex lg:gap-x-8 sm:gap-x-4">
                           <button
                             onClick={() =>
                               Incc(
@@ -144,14 +145,14 @@ export const InternalCartShop = () => {
                       </>
                     }
                   </div>
-                  <div className=" text-center felx ml-10 border-2 p-0 w-40">
+                  <div className=" text-center felx ml-10 p-0 w-40">
                     {item.product[0].type}
 
                     <div className="mt-8"> ${item.product[0].price}</div>
                     <div className="mt-4"> {item.qty}</div>
                   </div>
 
-                  <div className=" felx ml-20 border-2 p-0 w-40">
+                  <div className=" felx ml-20  p-0 w-40">
                     ${item.product[0].price * item.qty}
                   </div>
                 </div>
@@ -163,7 +164,7 @@ export const InternalCartShop = () => {
               </div>
             </div>
           ) : (
-            <div className="  flex items-center justify-center  ml-40">
+            <div className="  flex items-center justify-center  lg:ml-40 sm:ml-16" >
               <div className="  flex items-center  justify-centre">
                 <div className="">
                   <AiOutlineShopping fill="blue" size={60}></AiOutlineShopping>
@@ -180,7 +181,7 @@ export const InternalCartShop = () => {
       </div>
 
       <div
-        className={`mt-20 ml-80 flex  gap-x-32  items-center  justify-center`}
+        className={`mt-20 lg:ml-80 sm:ml-32 flex  lg:gap-x-32 sm:gap-x-16  items-center  justify-center`}
       >
         <div className={`visible:${order !== 0}`}>
           <Link href={"/"}>

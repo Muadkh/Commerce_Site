@@ -4,9 +4,9 @@ import Image from 'next/image'
 export const DesignerJewellery = () => {
   return (
     <>
-    <div className='flex justify-end mt-40 '>
+    <div className='flex justify-between lg:mt-40 sm:mt-10  '>
     
-    <div className='ml-60 md:text-4xl sm:2xl font-extrabold '>
+    <div className='ml-60 md:text-4xl sm:2xl font-extrabold  '>
     <h1 className=''>Unique and <br/>Authentic Vintage <br/>Designer <br/>Jewellery</h1>
     </div>
     

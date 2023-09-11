@@ -9,6 +9,8 @@ export const GlobalStateContext = ({ children }) => {
   const [order, setOrder] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
   const [Gprice,setGprice]=useState(0)
+  const [isOpen, setOpen] = useState(false)
+  const [vis, notvis] = useState(false)
   const amount=[]
   const sum=0
 
@@ -126,7 +128,7 @@ const Decc=(qt,nm,pr)=>{
         totalPrice,
         setQty,
         Gprice,
-        Del,Incc,Decc,setCartItems,setGprice,setOrder,setTotalPrice
+        Del,Incc,Decc,setCartItems,setGprice,setOrder,setTotalPrice,isOpen,setOpen,vis,notvis
 
       }}
     >

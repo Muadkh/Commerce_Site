@@ -20,9 +20,9 @@ const  {Inc,qty,Dec,Onadd,setQty}=useGlobalState()
 
     
     
-    <div className=" flex mt-8 ml-2 font-bold text-2xl text-gray-800 ">
+    <div className=" flex mt-8 ml-2 font-bold lg:text-2xl sm:text-2xl text-gray-800 ">
               <h2 className="">Quantity:</h2>
-              <div className="ml-4 file flex items-center justify-center gap-4">
+              <div className="ml-4 file flex items-center justify-center gap-4 ">
                 <button type="button" onClick={()=> {Inc()}} className="border-2 rounded-full border-black" >
                   <AiOutlinePlus  size={20} className=""></AiOutlinePlus>
                 </button>

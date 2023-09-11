@@ -16,13 +16,13 @@ return (
 <>
 
 
-<Link href={"/Pages/Cart"}>
-  <button type='button' onClick={setShowCart(true)}>
+<Link  href={"/Pages/Cart"}>
+  <button className='lg:mr-8 '  type='button' onClick={setShowCart(true)}>
 
-    <div className=' flex bg-gray-200 rounded-full h-14 w-14 p-1  ' >
+    <div className=' flex bg-gray-200 rounded-full h-12 w-12 p-1  ' >
       
 <div className=' flex rounded-full items-center pl-2'>
-<AiOutlineShoppingCart  size={16}/>
+<AiOutlineShoppingCart  size={14}/>
 
 </div>
 

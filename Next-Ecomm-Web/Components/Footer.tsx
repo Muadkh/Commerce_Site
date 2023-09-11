@@ -4,7 +4,7 @@ import {FaFacebookF} from 'react-icons/fa'
 import {ImLinkedin2} from 'react-icons/im'
 export const Footer = () => {
   return (<>
-    <footer className=" ml-20 footer p-4  text-base-content">
+    <footer className=" ml-20 footer p-4  text-base-content ">
   <div>
     <div className="Hero flex flex-wrap items-center space-x-1">< span><div className="text-5xl">S</div></span> <span><div>tyle</div></span> <span><div>Shop</div></span></div>
      <p>Small, artisan label that offers a <br></br>thoughtfully curated collection of high <br></br>quality everyday essentials made.</p>

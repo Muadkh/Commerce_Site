@@ -10,6 +10,7 @@ import {
 import { Toast } from "react-toastify/dist/components";
 import { Toaster } from "react-hot-toast";
 import Router, { useRouter } from "next/navigation";
+import MobNav from "@/Components/MobNav";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -20,16 +21,21 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) 
+
+
+
+{
   return (
     <html lang="en">
       <GlobalStateContext>
         <body className={inter.className}>
           <main>
-            <div className="flex mt-10 ml-20 space-x-8">
+            <div className="flex mt-10 ml-20 lg:space-x-8 sm:space-x-0">
               <HeroBanner />
-              <NavBar />
+              <NavBar  />
               <Cart />
+
             </div>
 
             <Toaster />

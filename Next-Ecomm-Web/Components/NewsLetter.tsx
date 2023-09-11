@@ -4,12 +4,12 @@ export const NewsLetter = () => {
   return (
     <>
 
-    <h1 className='absolute z-10 mt-30 md:text-8xl  sm:text-2xl font-black opacity-10 sm:mx-auto'>Newsletter</h1>
-    <div className='mt-30'>
+    <h1 className='absolute z-10 mt-30 md:text-8xl  sm:text-2xl font-black opacity-10 sm:mx-auto '>Newsletter</h1>
+    <div className='lg:mt-30 '>
 
-    <span className=" md:text-3xl sm:text-xl font-bold text-gray-900 mb-16">
+    <span className=" md:text-3xl sm:text-xl font-bold text-gray-900 lg:mb-16 sm:mb-8" >
 Subscribe Our Newsletter</span> 
-    <div className="mb-16">
+    <div className="mb-16 ">
       <label className="label">
         <span className="label-text">Get the latest information and promo offers directly</span>
       </label> 
