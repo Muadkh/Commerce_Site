@@ -44,7 +44,7 @@ const Success = () => {
         <h2 className="font-bold text-3xl p-8">Thank You For Your Order</h2>
         <p className="text-xl ">Check Your E-mail For The Receive</p>
         <p className="text-xl ">
-          "If You Have Any Questions, Please E-mail" 
+          If You Have Any Questions, Please E-mail
         <span></span>  <a href="mailto:order@exemple.com" className="text-blue-600 font-bold hover:underline ">order@exemple.com</a>
         </p>
         <div className="mt-16">
