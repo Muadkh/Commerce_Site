@@ -4,6 +4,7 @@ import { BsBagCheckFill } from 'react-icons/bs'
 
 const Fail = () => {
   return (
+    <>
     <div>
         <div className="success flex-col text-center items-center justify-between  ">
         <div className="icon items-center justify-center flex p-8 mt-8 gap-x-10 ">
@@ -30,6 +31,7 @@ const Fail = () => {
         </div>
       </div>
     </div>
+              </>
   )
 }
 
