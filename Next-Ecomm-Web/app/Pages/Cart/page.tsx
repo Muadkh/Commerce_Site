@@ -40,8 +40,7 @@ const CartShop = () => {
 };
 
 export default CartShop;
-
-export const InternalCartShop = () => {
+const InternalCartShop = () => {
   const {
     Incc,
     qty,
