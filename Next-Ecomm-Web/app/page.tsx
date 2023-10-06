@@ -4,8 +4,7 @@ import Image from 'next/image'
 // import { urlForImage } from '@/sanity/lib/image'
 import {Footer,HeroBanner,NavBar,Cart,NewsLetter,Footer1,LoadingPage, Products, Promotions} from '../Components'
 import { DesignerJewellery } from '@/Components/DesignerJewellery'
-
-export const  getData=async()=>{
+const  getData=async()=>{
 
   const query= '*[_type == "loading"][0]'
   const products= await client.fetch(query)
@@ -18,7 +17,7 @@ export const  getData=async()=>{
 
 
 
-export default async function Home() {
+async function Home() {
 
     const data=  await getData()
   
@@ -45,3 +44,4 @@ export default async function Home() {
   )
 }
 
+export default Home
