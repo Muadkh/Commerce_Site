@@ -8,14 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "migration:generate": "drizzle-kit generate:pg --schema=./app/DB/schema.ts",
-    "migration:push": "node -r esbuild-register app/DB/migrate.ts"
+    "migration:push": "node -r esbuild-register app/DB/migrate.ts",
+    "type": "module"
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.12.0",
     "@stripe/stripe-js": "^1.54.1",
     "@types/node": "20.2.5",
-    "@types/react": "18.2.7",
+    "@types/react": "^18.2.7",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "canvas-confetti": "^1.6.0",

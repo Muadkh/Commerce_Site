@@ -40,4 +40,4 @@ const CartShop = () => {
   );
 };
 
-export default CartShop;
+export default CartShop
