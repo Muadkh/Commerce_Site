@@ -3,7 +3,7 @@ import { order, users } from "@/app/DB/schema"
 import { exists, ne } from "drizzle-orm"
 import { NextRequest, NextResponse } from "next/server"
 
-export async function POST( req:NextResponse,res:NextResponse){
+export async function POST( req:NextRequest,res:NextResponse){
     const fullName="Adil"
     const phone="03449509625"
     await db.insert(users).values({fullName,phone})
