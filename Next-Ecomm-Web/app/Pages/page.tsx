@@ -5,7 +5,7 @@ import {Fprod}  from "../../Components/Fprod";
 import { fromJSON } from "postcss";
 
 
-export const getfproducts=async ()=>{
+const getfproducts=async ()=>{
   const query= '*[_type == "fproducts"]'
   const pro= await client.fetch(query)
    return  pro
@@ -14,7 +14,7 @@ export const getfproducts=async ()=>{
 
 
 
-export default async function page() {
+ async function page() {
 
   
     const fpros=  await getfproducts()
@@ -36,3 +36,4 @@ export default async function page() {
     </>
   );
 }
+export default page
