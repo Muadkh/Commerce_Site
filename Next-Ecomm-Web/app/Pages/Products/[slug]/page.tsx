@@ -15,7 +15,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { ItemQty } from "@/Components/ItemQty";
 import { GlobalStateContext } from "@/app/Context/StateContextStore";
 import { useRouter } from "next/navigation";
-async function getfproduct(sl: any) {
+async function getfproduct(sl: string) {
   const query = `*[_type == "fproducts" && slug.current =='${sl}']{
 
 name,detail,type,image,care,price,_id
