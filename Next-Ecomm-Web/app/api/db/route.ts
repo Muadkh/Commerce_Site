@@ -1,7 +1,7 @@
 import { db } from "@/app/DB"
 import { order, users } from "@/app/DB/schema"
 import { exists, ne } from "drizzle-orm"
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 
 export async function POST( req:NextResponse,res:NextResponse){
     const fullName="Adil"
@@ -11,7 +11,7 @@ export async function POST( req:NextResponse,res:NextResponse){
   return NextResponse.json(res)
          
       }
-      export async function GET( req:NextResponse,res:NextResponse){
+      export async function GET( req:NextRequest,res:NextResponse){
        
       const data= await db.select().from(users)
       return NextResponse.json(data)
