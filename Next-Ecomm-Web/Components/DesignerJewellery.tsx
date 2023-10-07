@@ -32,7 +32,7 @@ export const DesignerJewellery = () => {
   </div>
   <div>
 
-    <Image src={'/Design.png'} alt="Design Image" height={350} width={350}></Image>
+    <Image src={'/public/Design.png'} alt="Design Image" height={350} width={350}></Image>
   </div>
   <div className='ml-10'>
 
