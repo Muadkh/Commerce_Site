@@ -42,7 +42,7 @@ export const Products = ()=>{
             <div className="hover:scale-110 duration-300 delay-200  z-0">
               <Image
                 className=" md:ml-8 sm:ml-4 "
-                src={"/public/products1.png"}
+                src={"/products1.png"}
                 alt={"Prmotion Image1"}
                 height={350}
                 width={450}
@@ -57,7 +57,7 @@ export const Products = ()=>{
             <div>
               <Image
                 className=""
-                src={"/public/LoadinPageImage.png"}
+                src={"/LoadinPageImage.png"}
                 alt={"Lproducts Image"}
                 height={350}
                 width={450}
@@ -71,7 +71,7 @@ export const Products = ()=>{
           <div className="hover:scale-110 duration-300 delay-200  z-20">
             <Image
               className=""
-              src={"/public/products3.png"}
+              src={"/products3.png"}
               alt={"Prmotion Image2"}
               height={350}
               width={450}

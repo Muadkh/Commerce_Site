@@ -14,17 +14,17 @@ export const Promotions = ({promo}:any) => {
     <div className='ml-20 mt-10 grid md:grid-cols-3 grid-rows-2 gap-x-4 sm:grid-cols-1'>
     <div className='absolute ml-10 font-bold z-10  md:text-4xl sm:2xl'>GET<br/>UP<br/>TO<br/>60% <span className='text-xl text-gray-600 font-medium'> <div>For the<br/>summer<br/>seasons</div></span></div>
 
-    <div className='w-50 h-50 bg-gray-200 relative'><Image className='p-2 ml-16' src={'/public/promotionc1.png'} alt={'Prmotion Image1'} height={350} width={350}></Image>
+    <div className='w-50 h-50 bg-gray-200 relative'><Image className='p-2 ml-16' src={'/promotionc1.png'} alt={'Prmotion Image1'} height={350} width={350}></Image>
     </div>
 <div className='row-span-2 mt-4 mb-2 bg-red-100 ml-10 '>
      <p className='ml-10 mt-10 '>Flex Sweatshirt</p>
      <p className='ml-10 mb-8'> <span className='line-through'>$100.00</span> <span className='font-bold'>$75.00</span></p>
-    <Image src={'/public/promotionc2.png'} alt={'Prmotion Image2'} height={350} width={300}></Image>
+    <Image src={'/promotionc2.png'} alt={'Prmotion Image2'} height={350} width={300}></Image>
 </div>
     <div className='row-span-2 mt-4 mb-2 bg-gray-200 ml-6'>
 <p className='ml-10 mt-10'>Flex Push Button Bomber</p>
 <p className='ml-10 mb-8'><span className="line-through">$225.00</span>  <span className='font-bold'>$190.00</span></p>
-    <Image src={'/public/promotionc3.png'} alt={'Prmotion Image2'} height={350} width={300}></Image>
+    <Image src={'/promotionc3.png'} alt={'Prmotion Image2'} height={350} width={300}></Image>
 
     </div>
     <div className="bg-gray-900 mt-4 text-white items-center text-center flex-col pt-20">
