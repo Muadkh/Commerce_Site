@@ -21,7 +21,10 @@ async function getfproduct(sl: string) {
 name,detail,type,image,care,price,_id
 
   }`;
-  const pro = await client.fetch(query,{cache: "no-store"});
+  const pro = await client.fetch(query,{cache: "no-store",
+    mode: 'cors',
+    credentials: 'include'
+  });
   return pro;
 
 }
