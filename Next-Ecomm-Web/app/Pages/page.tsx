@@ -7,7 +7,10 @@ import { fromJSON } from "postcss";
 
 const getfproducts=async ()=>{
   const query= '*[_type == "fproducts"]'
-  const pro= await client.fetch(query)
+  const pro= await client.fetch(query, {
+    mode: 'cors',
+    credentials: 'include'
+  })
    return  pro
 
 }
