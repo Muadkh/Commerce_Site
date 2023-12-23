@@ -30,7 +30,7 @@ const InternalCartShop = () => {
 
       {
         method: "POST",
-        headers: { "Content-Type": "application/json", origion: "localhost" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cartItems),
       }
     );

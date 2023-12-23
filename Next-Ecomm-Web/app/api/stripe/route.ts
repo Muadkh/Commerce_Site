@@ -5,10 +5,10 @@ import { db } from '@/app/DB'
 import { users } from '@/app/DB/schema'
 import { drizzle } from 'drizzle-orm/node-postgres'
 import pg from 'pg';
-const stripe= new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+const stripe= new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY as string, {
     apiVersion: "2022-11-15",
   })
-
+console.log(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY)
 
 export async function POST(req: Request){
   const data:any=  await req.json()
