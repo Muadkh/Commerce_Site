@@ -22,9 +22,8 @@ name,detail,type,image,care,price,_id
 
   }`;
   const pro = await client.fetch(query,{cache: "no-store",
-    mode: 'cors',
-    credentials: 'include'
-  });
+  mode: 'cors', headers: { 'Content-Type': 'application/json'
+}});
   return pro;
 
 }
