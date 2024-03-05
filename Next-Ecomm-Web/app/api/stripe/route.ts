@@ -49,8 +49,8 @@ minimum:1,
     }),
       
       
-      success_url: 'http://Pages/Success',
-      cancel_url: 'http://Pages/Fail',
+      success_url: '/Pages/Success',
+      cancel_url: '/Pages/Fail',
       }
 
       const session =await stripe.checkout.sessions.create(params);
